@@ -1,53 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <link rel="stylesheet" href="/Estilos/styles.css">
+    <title>Club de lecctura</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 id="for1">Inscripción al Club de Lectura</h1>
-     <form action="https://webhook.site/8802c7ee-2999-4037-ae1f-a4af7c36d8af" method="POST" enctype="multipart/form-data">
-        <fieldset>
-            <legend>Formulario de Inscripción</legend>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required><br><br>
+<!--Creacion de la cabecera-->
+    <header>
+        <h1>Club de Lectura Guanarteme</h1>
+        <p class="lema">Fomentando la lectura, creando comunidad.</p> 
+            <a href="#proxima-reunion">Próxima Reunión</a>
+            <a href="#reseñas">Reseñas de Libros</a> 
+            <a href="#calendario">Calendario</a> 
+            <a href="/HTML/Formulario.html">Formulario</a> 
+            <a href="#politica-privacidad">Política de Privacidad</a>
+        </nav>
+    </header>
+<!--Creacion del cuerpo y contidos varios-->
+<main>
+    <hr>
+    <Section id="proxima reunion">
+        <h2>Próxima reunión</h2>
+        <article>
+            <h3>El libro de este mes es</h3>
+            <figure>
+                <figcaption id="libro">Alas de Hierro</figcaption>
+                <img src="Alas de hierro.jpg" alt="Alas de Hierro">
+                <p><strong>Sinopsis del libro:</strong>Todos esperaban que Violet Sorrengail muriera durante su primer año en el Colegio de Guerra Basgiath, incluso ella misma. Pero la Trilla fue tan solo la primera de una serie de pruebas imposibles destinadas a deshacerse de los indignos y los desafortunados.</p>
+                <p>Ahora comienza el verdadero entrenamiento, y Violet no sabe cómo logrará superarlo. No solo porque es brutal y agotador o porque está diseñado para llevar al límite el umbral del dolor de los jinetes, sino porque el nuevo vicecomandante está empeñado en demostrarle lo débil que es, a menos que traicione al hombre al que ama. La voluntad de sobrevivir no será suficiente este año, porque Violet conoce el secreto que se oculta entre los muros del colegio, y nada, ni siquiera el fuego de dragón, será suficiente para salvarlos.</p>
+            </figure>
+        </article>
+    </Section>
+<!--Comentario con las mejores reseñas-->
+    <section id="Reseñas">
+        <h2>Reseñas del libro Más pedidos</h2>
+        <article>
+            <h3>Fernado Lopez</h3>
+            <p><strong>Libro:</strong> Arsene Lupin</p>
+            <p>El libro muy entretenido e interesante lo recomiendo</p>
+        </article>
+    </section>
+    <section  id="Reseñas">
+        <article>
+            <h3>Antonio Ortega</h3>
+            <p><strong>Libro:</strong>  Acelerando en Rojo</p>
+            <p> Libro muy interesante un poco dificil de entender teniendo en cuenta que tiene terminos de la F1 pero quitando eso es un librazo</p>
+        </article>
+    </section>
+    
+<!--Calendario de la planificacion-->
+    <section id="calendario">
+            <h2>Calendario de Reuniones</h2>
+            <table>
+                <caption>Calendario de Reuniones</caption>
+                <thead>
+                    <tr>
+                        <th>Fechas</th>
+                        <th>Libro del Mes</th>
+                        <th>Autor</th>
+                        <th>Lugar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>15/12/2025</td>
+                        <td>"Alas de Hierro"</td>
+                        <td>Rebecca Yarros</td>
+                        <td>Sede Vecinal de Guanarteme</td>
+                    </tr>
+                    <tr>
+                        <td>30/12/2025</td>
+                        <td>"Phantasmas"</td>
+                        <td>Kaylie Smith</td>
+                        <td>Sede Vecinal de Guanarteme</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    <!--contenido sociales-->
+    <aside>
+        <h3>información y Consejos</h3>
+            <ul>
+                <li><a href="https://universoabierto.org/2025/03/05/consejos-para-tener-un-club-de-lectura-exitoso-reglas-para-crear-y-mantener-un-club-de-lectura/">Normas del Club</a></li>
+                <li><a href="https://www.victoriamonera.com/para-los-que-quieren-empezar-a-leer/">Consejos para Participar</a></li>
+                <li><a href="https://escueladelamemoria.com/5-trucos-para-leer-mejor-y-recordar-lo-que-lees/">Tips para la Lectura</a></li>
+            </ul>
+    </aside>
 
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required><br><br>
-
-                    <label for="telefono">Teléfono:</label>
-                    <input type="tel" id="telefono" name="telefono" required><br><br>
-
-                    <label for="genero">Género Literario Preferido:</label>
-                    <select id="genero" name="genero" required>
-                        <option value="ficcion">Ficción</option>
-                        <option value="no_ficcion">No Ficción</option>
-                        <option value="ciencia_ficcion">Ciencia Ficción</option>
-                        <option value="fantasia">Fantasía</option>
-                    </select><br><br>
-
-                    <label for="comentarios">Comentarios:</label><br>
-                    <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
-
-                    <fieldset>
-                        <legend>Horario Preferido</legend>
-                        <label for="mañana">Mañana</label>
-                        <input type="radio" id="mañana" name="horario" value="mañana">
-                        <label for="tarde">Tarde</label>
-                        <input type="radio" id="tarde" name="horario" value="tarde">
-                    </fieldset><br><br>
-
-                    <fieldset>
-                        <legend>Preferencias de Contacto</legend>
-                        <label for="telefono_contacto">Teléfono</label>
-                        <input type="checkbox" id="telefono_contacto" name="preferencias_contacto" value="telefono"><br>
-                        <label for="email_contacto">Correo Electrónico</label>
-                        <input type="checkbox" id="email_contacto" name="preferencias_contacto" value="email"><br>
-                    </fieldset><br><br>
-
-                   <button type="submit"id="bnt-enviar" name="accion" value="Enviar" title="enviar-formulario">Enviar datos</button>
-        <button type="reset"d="bnt-limpiar" name="accion" value="Limpiar" title="Limpiar">Limpiar datos</button>
+    
+        <section id="politica-privacidad">
+            <h2><a id="privacidad" href="https://www.youtube.com/watch?v=iRWSjN--LHY">Política de Privacidad</a></h2>
+            <p>Tu privacidad es importante para nosotros. Aquí encontrarás cómo manejamos tu información...</p>
+        </section>
+</main>
+<!--Pie de pagina-->
+<footer>
+        <p>&copy; 2025 Club de Lectura de Guanarteme</p>
+        <a href="#top">Volver arriba</a>
+        <div>
+            <a href="https://twitter.com">Twitter</a>
+            <a href="https://instagram.com">Instagram</a>
+        </div>
+    </footer>
 </body>
 </html>
