@@ -5,26 +5,11 @@ body {
 }
 
 header {
-    background: #4B79A1;
+    background: green;
     color: white;
     padding: 20px;
     text-align: center;
 }
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-}
-
-nav a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
 section, article, aside {
     padding: 20px;
     margin: 10px;
@@ -42,15 +27,15 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #444;
+    border: 1px solid pink;
 }
 
 th {
-    background-color: #ddd;
+    background-color: pink;
 }
 
 form {
-    background: #f4f4f4;
+    background: orange;
     padding: 20px;
     border-radius: 8px;
 }

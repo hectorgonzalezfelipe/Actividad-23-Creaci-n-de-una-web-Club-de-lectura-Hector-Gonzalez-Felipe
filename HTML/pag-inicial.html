@@ -1,65 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Club de lecctura</title>
     <link rel="stylesheet" href="/Estilos/styles.css">
 </head>
 <body>
-     <header>
-        <h1>Club de Lectura Comunitario de Guanarteme</h1>
+<!--Creacion de la cabecera-->
+    <header>
+        <h1>Club de Lectura Guanarteme</h1>
         <p class="lema">Fomentando la lectura, creando comunidad.</p>
-        <nav>
-            <ul>
-                <li><a href="#proxima-reunion">Próxima Reunión</a></li>
-                <li><a href="#reseñas">Reseñas de Libros</a></li>
-                <li><a href="#calendario">Calendario</a></li>
-                <li><a href="/HTML/Formulario.html">Inscripción</a></li>
-                <li><a href="#politica-privacidad">Política de Privacidad</a></li>
-            </ul>
+            <a href="#proxima-reunion">Próxima Reunión</a> <a href="#reseñas">Reseñas de Libros</a> <a href="#calendario">Calendario</a> <a href="/HTML/Formulario.html">Inscripción</a> <a href="#politica-privacidad">Política de Privacidad</a>
         </nav>
     </header>
-
-    <main>
-        <section id="proxima-reunion">
-            <h2>Próxima Reunión</h2>
+<!--Creacion del cuerpo y contidos varios-->
+<main>
+    <Section id="proxima reunion">
+        <h2>Próxima reunión</h2>
+        <article>
+            <h3>El libro de este mes es</h3>
+            <figure>
+                <figcaption>Alas de Hierro</figcaption>
+                <img src="/Imagenes/Alas de hierro.jpg" alt="Alas de Hierro">
+            </figure>
+        </article>
+    </Section>
+<!--Comentario con las mejores reseñas-->
+    <section id="Reseñas">
+        <h2>Reseñas del libro Más pedidos</h2>
+        <article>
+            <h3>Libro: Arsene Lupin</h3>
+            <p><strong>Anonimo</strong></p>
+            <p>El libro muy entretenido e interesante </p>
+        </article>
+    </section>
             <article>
-                <h3>El libro de este mes</h3>
-                <figure>
-                    <figcaption>Alas De Hierro</figcaption>
-                    <img src="/Imagenes/Alas de hierro.jpg" alt="Alas De Hierro">
-                </figure>
-                <p><strong>Fecha:</strong> 15 de diciembre de 2025, <strong>Hora:</strong> 18:00, <strong>Lugar:</strong> Sede Vecinal de Guanarteme</p>
-                <ul>
-                    <li>Bienvenida y presentación</li>
-                    <li>Discusión sobre el libro</li>
-                    <li>Próximas actividades</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="reseñas">
-            <h2>Reseñas de Libros</h2>
-            <article>
-                <h3>Libro: "Título del Libro"</h3>
-                <p><strong>Autor:</strong> Autor del libro</p>
-                <p>Reseña: Un párrafo sobre el libro y su impacto.</p>
-            </article>
-            <article>
-                <h3>Libro: "Otro Título del Libro"</h3>
-                <p><strong>Autor:</strong> Otro autor</p>
-                <p>Reseña: Otro párrafo sobre el libro y su relevancia.</p>
-            </article>
-        </section>
-
-        <section id="calendario">
+            <h3>Libro: Acelerando en Rojo</h3>
+            <p><strong>Anonimo</strong></p>
+            <p> Libro muy interesante un poco dificil de entender teniendo en cuenta que tiene terminos de la F1 pero quitando eso es un librazo</p>
+        </article>
+    </section>
+<!--Calendario de la planificacion-->
+    <section id="calendario">
             <h2>Calendario de Reuniones</h2>
             <table>
                 <caption>Calendario de Reuniones</caption>
                 <thead>
                     <tr>
-                        <th>Fecha</th>
+                        <th>Fechas</th>
                         <th>Libro del Mes</th>
                         <th>Autor</th>
                         <th>Lugar</th>
@@ -68,36 +57,38 @@
                 <tbody>
                     <tr>
                         <td>15/12/2025</td>
-                        <td>"Título del libro"</td>
-                        <td>Autor del libro</td>
+                        <td>"Alas de Hierro"</td>
+                        <td>Rebecca Yarros</td>
                         <td>Sede Vecinal de Guanarteme</td>
                     </tr>
                     <tr>
                         <td>30/12/2025</td>
-                        <td>"Otro libro"</td>
-                        <td>Otro autor</td>
+                        <td>"Phantasmas"</td>
+                        <td>Kaylie Smith</td>
                         <td>Sede Vecinal de Guanarteme</td>
                     </tr>
                 </tbody>
             </table>
         </section>
-
-        <aside>
-            <h3>Enlaces Complementarios</h3>
+    <!--contenido sociales-->
+    <aside>
+        <h3>información y Consejos</h3>
             <ul>
-                <li><a href="normas.html">Normas del Club</a></li>
-                <li><a href="consejos.html">Consejos para Participar</a></li>
-                <li><a href="tips.html">Tips para la Lectura</a></li>
+                <li><a href="https://universoabierto.org/2025/03/05/consejos-para-tener-un-club-de-lectura-exitoso-reglas-para-crear-y-mantener-un-club-de-lectura/">Normas del Club</a></li>
+                <li><a href="https://www.victoriamonera.com/para-los-que-quieren-empezar-a-leer/">Consejos para Participar</a></li>
+                <li><a href="https://escueladelamemoria.com/5-trucos-para-leer-mejor-y-recordar-lo-que-lees/">Tips para la Lectura</a></li>
             </ul>
-        </aside>
+    </aside>
 
+    
         <section id="politica-privacidad">
             <h2>Política de Privacidad</h2>
             <p>Tu privacidad es importante para nosotros. Aquí encontrarás cómo manejamos tu información...</p>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Club de Lectura Comunitario de Guanarteme</p>
+</main>
+<!--Pie de pagina-->
+<footer>
+        <p>&copy; 2025 Club de Lectura de Guanarteme</p>
         <a href="#top">Volver arriba</a>
         <div>
             <a href="https://twitter.com">Twitter</a>
