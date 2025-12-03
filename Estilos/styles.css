@@ -5,10 +5,14 @@ body {
 }
 
 header {
-    background: green;
+    background: rgb(0, 128, 49);
     color: white;
     padding: 20px;
     text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+body {
+    font-family: 'Times New Roman';
 }
 section, article, aside {
     padding: 20px;
@@ -34,6 +38,9 @@ th {
     background-color: pink;
 }
 
+td {
+    background-color: white;
+}
 form {
     background: orange;
     padding: 20px;
@@ -63,4 +70,18 @@ footer {
 
 footer a {
     color: #8ab4f8;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+}
+
+#Reseñas {
+    background-color: aqua;
+}
+
+#libro {
+    font-family:'Courier New', Courier, monospace;
+    font-size: large;
+    text-decoration: underline;
 }
